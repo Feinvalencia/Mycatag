@@ -13,6 +13,12 @@ import image1 from './assets/1.jpeg';
 import image2 from './assets/2.jpeg';
 import image3 from './assets/3.jpeg';
 import image4 from './assets/4.jpeg';
+import img1 from './assets/Tecnolite2022v2-19.jpg'
+import img2 from './assets/Tecnolite2022v2-20.jpg'
+import img3 from './assets/Tecnolite2022v2-21.jpg'
+import img4 from './assets/Tecnolite2022v2-21.jpg'
+import img5 from './assets/Tecnolite2022v2-1.jpg'
+import img6 from './assets/Tecnolite2022v2-2.jpg'
 
 const imagen = [image1, image2, image3, image4];
 
@@ -52,7 +58,7 @@ const pages = [
   {
     image:
       /*   'https://catalogodigitalassets.somosbelcorp.com/PE/202307/L/paginas/PE_L_202307_006-007.jpg', */
-      '../public/Tecnolite2022v2-19.jpg',
+      img1,
     left: [
       {
         x: 210,
@@ -99,17 +105,17 @@ const pages = [
   },
 
   {
-    image: '../public/Tecnolite2022v2-20.jpg',
+    image: img2,
     left: [],
     right: [],
   },
   {
-    image: '../public/Tecnolite2022v2-21.jpg',
+    image: img3,
     left: [],
     right: [],
   },
   {
-    image: '../public/Tecnolite2022v2-21.jpg',
+    image: img4,
     left: [],
     right: [],
   },
@@ -351,8 +357,8 @@ function App() {
           onFlip={onFlip}
 
         >
-          <PageCover src={'../public/Tecnolite2022v2-1.jpg'} />
-          <PageCover src={'../public/Tecnolite2022v2-2.jpg'} />
+          <PageCover src={img5} />
+          <PageCover src={img6} />
 
           {pages.map((page, index) => (
             <PageLeft
